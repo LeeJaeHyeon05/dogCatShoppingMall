@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">dog cat shopping mall</string>
+    <string name="appNameText">개냥이</string>
+    <string name="introShoppingMallText">쇼핑몰</string>
 </resources>
