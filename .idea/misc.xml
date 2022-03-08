@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/dogcatshoppingmall/app/src/main/res/layout/activity_login.xml" value="0.2740036231884058" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/dogcatshoppingmall/app/src/main/res/layout/activity_main.xml" value="0.2740036231884058" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/dogcatshoppingmall/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/dogcatshoppingmall/app/src/main/res/layout/fragment_basket.xml" value="0.2740036231884058" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/dogcatshoppingmall/app/src/main/res/menu/bottom_menu.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
