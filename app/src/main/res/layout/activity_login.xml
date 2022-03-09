@@ -4,7 +4,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".LoginActivity">
 
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/black_han_sans"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/black_han_sans"
+        android:gravity="center"
+        android:text="@string/appNameText"
+        android:textColor="@color/black"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTextView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedEmailTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/user_email"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/buttonColor"
+        app:hintTextColor="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedPasswordTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/user_password"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/buttonColor"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outlinedEmailTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/emailSearchTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/black_han_sans"
+        android:gravity="center"
+        android:text="@string/email_search"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/passwordSearchTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outlinedPasswordTextField" />
+
+    <TextView
+        android:id="@+id/passwordSearchTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/black_han_sans"
+        android:gravity="center"
+        android:text="@string/password_search"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/emailSearchTextView"
+        app:layout_constraintTop_toBottomOf="@id/outlinedPasswordTextField" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/outlinedPasswordTextField"
+        app:layout_constraintStart_toStartOf="@id/outlinedPasswordTextField"
+        app:layout_constraintTop_toBottomOf="@id/emailSearchTextView" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/outlinedPasswordTextField"
+        app:layout_constraintStart_toStartOf="@id/outlinedPasswordTextField"
+        app:layout_constraintTop_toBottomOf="@id/loginButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googleLoginButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/google_login_text"
+        android:textColor="@color/black"
+        app:icon="@drawable/icons_google"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconSize="30dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/outlinedPasswordTextField"
+        app:layout_constraintStart_toStartOf="@id/outlinedPasswordTextField"
+        app:layout_constraintTop_toBottomOf="@id/signUpButton"
+        app:rippleColor="@color/buttonColor"
+        app:strokeColor="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

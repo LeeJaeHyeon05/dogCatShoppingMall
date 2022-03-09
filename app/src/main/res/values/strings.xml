@@ -2,6 +2,15 @@
     <string name="app_name">dog cat shopping mall</string>
     <string name="appNameText">개냥이</string>
     <string name="introShoppingMallText">쇼핑몰</string>
+    <string name="welcome">welcome</string>
+    <string name="user_name">이름</string>
+    <string name="user_email">이메일</string>
+    <string name="user_password">비밀번호</string>
+    <string name="email_search">이메일 찾기</string>
+    <string name="password_search">비밀번호 찾기</string>
+    <string name="login">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="google_login_text">구글 로그인</string>
     <string name="bottomHomeText">홈</string>
     <string name="bottomBasketText">장바구니</string>
     <string name="bottomProfileText">프로필</string>
