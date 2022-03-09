@@ -16,4 +16,8 @@
     <string name="bottomProfileText">프로필</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tabDogText">강아지</string>
+    <string name="tabCatText">고양이</string>
+
 </resources>
