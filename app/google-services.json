@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "373366021805",
+    "project_id": "dogcatshoppingmall",
+    "storage_bucket": "dogcatshoppingmall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373366021805:android:7c6fa6d9e73381c8ff3024",
+        "android_client_info": {
+          "package_name": "com.example.dogcatshoppingmall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373366021805-4923l6m6fo2r1ac87mdbnkccr64mn0pb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dogcatshoppingmall",
+            "certificate_hash": "6364f9b19446d33a58e16528b8d75ecedb1cd9b4"
+          }
+        },
+        {
+          "client_id": "373366021805-3va1aco6a0119uvq1j9udufgjfg3kvvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsRZ_807oynnmoCs7wQA04EsLssCnvA8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373366021805-3va1aco6a0119uvq1j9udufgjfg3kvvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
