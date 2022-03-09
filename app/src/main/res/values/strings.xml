@@ -2,4 +2,9 @@
     <string name="app_name">dog cat shopping mall</string>
     <string name="appNameText">개냥이</string>
     <string name="introShoppingMallText">쇼핑몰</string>
+    <string name="bottomHomeText">홈</string>
+    <string name="bottomBasketText">장바구니</string>
+    <string name="bottomProfileText">프로필</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
