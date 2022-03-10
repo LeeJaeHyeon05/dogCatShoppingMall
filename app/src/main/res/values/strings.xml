@@ -19,5 +19,8 @@
 
     <string name="tabDogText">강아지</string>
     <string name="tabCatText">고양이</string>
+    <string name="sign_up_name">이름</string>
+    <string name="sign_up_password_check">비밀번호 확인</string>
+    <string name="sign_up_success">가입하러 가기</string>
 
 </resources>
