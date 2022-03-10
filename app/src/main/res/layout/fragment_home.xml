@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/userPatImageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#80000000"
+        android:tintMode="src_atop"
+        />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/userPatNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userPatImageView"
+        app:layout_constraintStart_toStartOf="@+id/userPatImageView"
+        android:text="초코"
+        android:layout_marginBottom="70dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/black_han_sans"
+        android:textSize="40sp"
+        android:layout_marginStart="20sp"/>
+
+    <TextView
+        android:id="@+id/userPatTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userPatNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/userPatNameTextView"
+        android:text="강아지"
+        android:textColor="@color/gray"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/userPatAgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userPatTypeTextView"
+        app:layout_constraintStart_toStartOf="@+id/userPatNameTextView"
+        android:text="3살"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/black_han_sans"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mainTypeTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userPatImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutDirection="ltr"
+        app:layout_constraintTop_toBottomOf="@id/mainTypeTabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

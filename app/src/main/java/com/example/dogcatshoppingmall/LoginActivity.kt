@@ -1,9 +1,11 @@
 package com.example.dogcatshoppingmall
 
 import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.dogcatshoppingmall.databinding.ActivityLoginBinding
@@ -55,6 +57,12 @@ class LoginActivity : AppCompatActivity() {
 
         initGoogleLoginButton()
         initLoginButton()
+
+
+        val next = findViewById<Button>(R.id.next)
+        next.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 
     private fun initLoginButton() = with(binding) {
