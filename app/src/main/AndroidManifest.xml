@@ -13,9 +13,6 @@
             android:name=".PasswordSearchActivity"
             android:exported="false" />
         <activity
-            android:name=".EmailSearchActivity"
-            android:exported="false" />
-        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity

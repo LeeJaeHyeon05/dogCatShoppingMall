@@ -35,6 +35,10 @@ class PasswordSearchActivity : AppCompatActivity() {
                             "가입하신 이메일로 비밀번호 재설정 이메일을 보냈습니다.",
                             Toast.LENGTH_LONG).show()
                         finish()
+                    } else {
+                        Toast.makeText(this@PasswordSearchActivity,
+                            "가입하신 이메일이 아닙니다.",
+                            Toast.LENGTH_SHORT).show()
                     }
                 }
         }

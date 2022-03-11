@@ -12,8 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/welcomeTextView"
@@ -91,21 +90,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/emailSearchTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
-        android:fontFamily="@font/black_han_sans"
-        android:gravity="center"
-        android:text="@string/email_search"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@id/passwordSearchTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/outlinedPasswordTextField" />
-
-    <TextView
         android:id="@+id/passwordSearchTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -116,8 +100,7 @@
         android:text="@string/password_search"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/emailSearchTextView"
+        app:layout_constraintEnd_toEndOf="@id/outlinedPasswordTextField"
         app:layout_constraintTop_toBottomOf="@id/outlinedPasswordTextField" />
 
     <Button
@@ -130,7 +113,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/outlinedPasswordTextField"
         app:layout_constraintStart_toStartOf="@id/outlinedPasswordTextField"
-        app:layout_constraintTop_toBottomOf="@id/emailSearchTextView" />
+        app:layout_constraintTop_toBottomOf="@id/passwordSearchTextView" />
 
     <Button
         android:id="@+id/signUpButton"
