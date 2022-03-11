@@ -58,6 +58,7 @@ class LoginActivity : AppCompatActivity() {
         initGoogleLoginButton()
         initLoginButton()
         initSignUpButton()
+        initPasswordSearchButton()
 
         val next = findViewById<Button>(R.id.next)
         next.setOnClickListener {
@@ -86,6 +87,12 @@ class LoginActivity : AppCompatActivity() {
     private fun initGoogleLoginButton() = with(binding) {
         googleLoginButton.setOnClickListener { view ->
             signInGoogle()
+        }
+    }
+
+    private fun initPasswordSearchButton() = with(binding) {
+        passwordSearchTextView.setOnClickListener {
+            movePasswordSearchPage()
         }
     }
 
@@ -184,5 +191,9 @@ class LoginActivity : AppCompatActivity() {
     private fun moveMainPage() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
+    }
+
+    private fun movePasswordSearchPage() {
+        startActivity(Intent(this, PasswordSearchActivity::class.java))
     }
 }

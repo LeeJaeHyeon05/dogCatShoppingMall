@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DogCatShoppingMall">
         <activity
+            android:name=".PasswordSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmailSearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
@@ -23,10 +29,10 @@
         </activity>
         <activity
             android:name=".SplashActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
